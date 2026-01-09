@@ -3,8 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <script>
-      sessionStorage.redirect = location.pathname
-      location.replace("/")
+      var redirect =
+        location.pathname +
+        location.search +
+        location.hash;
+
+      sessionStorage.setItem('redirect', redirect);
+      location.replace('/');
     </script>
   </head>
 </html>
