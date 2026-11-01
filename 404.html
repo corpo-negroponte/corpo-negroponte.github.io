@@ -1,15 +1,21 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="es">
   <head>
-    <meta charset="utf-8" />
-    <script>
-      var redirect =
-        location.pathname +
-        location.search +
-        location.hash;
-
-      sessionStorage.setItem('redirect', redirect);
-      location.replace('/');
-    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corporación Nicholas Negroponte</title>
+    <link rel="canonical" href="https://corponegroponte.org/" />
+    <meta name="robots" content="noindex, follow" />
+    <meta http-equiv="refresh" content="0; url=https://corponegroponte.org/" />
+    <link rel="icon" type="image/png" href="./icono.png" />
   </head>
+  <body style="font-family: system-ui, sans-serif; padding: 3rem; text-align: center;">
+    <p>
+      Este sitio ahora está en
+      <a href="https://corponegroponte.org/">corponegroponte.org</a>.
+    </p>
+    <script>
+      window.location.replace("https://corponegroponte.org/");
+    </script>
+  </body>
 </html>
